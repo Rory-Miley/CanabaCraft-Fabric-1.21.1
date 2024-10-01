@@ -20,6 +20,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.BUD);
                         entries.add(ModItems.SKIN);
+                        entries.add(ModItems.JOINT);
                         entries.add(ModBlocks.KILO_BUD_BLOCK);
                     }).build());
 
