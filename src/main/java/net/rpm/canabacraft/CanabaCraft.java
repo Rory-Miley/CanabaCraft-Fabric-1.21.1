@@ -2,6 +2,8 @@ package net.rpm.canabacraft;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.rpm.canabacraft.block.ModBlocks;
+import net.rpm.canabacraft.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +14,9 @@ public class CanabaCraft implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItemGroups.registerModGroups();
+
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
