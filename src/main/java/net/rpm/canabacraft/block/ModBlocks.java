@@ -1,8 +1,10 @@
 package net.rpm.canabacraft.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
@@ -13,6 +15,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.sound.BlockSoundGroup;
 import net.rpm.canabacraft.CanabaCraft;
 import net.minecraft.util.Identifier;
+import net.rpm.canabacraft.block.custom.HempCropBlock;
 
 public class ModBlocks {
     //list of blocks to register
@@ -23,6 +26,9 @@ public class ModBlocks {
                     .strength(0.5F)
                     .sounds(BlockSoundGroup.GRASS)
             ));
+
+    public static final Block HEMP_CROP = Registry.register(Registries.BLOCK, Identifier.of(CanabaCraft.MOD_ID, "hemp_crop"),
+            new HempCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
 
 
 

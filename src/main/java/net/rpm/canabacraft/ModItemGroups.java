@@ -22,6 +22,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SKIN);
                         entries.add(ModItems.JOINT);
                         entries.add(ModBlocks.KILO_BUD_BLOCK);
+                        entries.add(ModItems.HEMP_SEEDS);
                     }).build());
 
 
