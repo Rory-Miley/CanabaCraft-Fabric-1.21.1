@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "canabacraft",
-	"version": "${version}",
+	"version": "Alpha-1",
 	"name": "CanabaCraft",
 	"description": "A fabric mod port for CanabaCraft: INDEV",
 	"authors": [
