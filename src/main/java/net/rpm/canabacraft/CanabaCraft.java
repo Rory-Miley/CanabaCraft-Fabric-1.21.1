@@ -3,6 +3,7 @@ package net.rpm.canabacraft;
 import net.fabricmc.api.ModInitializer;
 
 
+import net.minecraft.block.ComposterBlock;
 import net.rpm.canabacraft.block.ModBlocks;
 import net.rpm.canabacraft.item.ModItems;
 import net.rpm.canabacraft.util.ModLootTableModifiers;
@@ -20,6 +21,8 @@ public class CanabaCraft implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.HEMP_SEEDS, 0.3F);
+		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.BUD, 0.5F);
 
 		ModLootTableModifiers.modifyLootTables();
 	}
