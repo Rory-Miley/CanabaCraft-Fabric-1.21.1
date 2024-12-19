@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "canabacraft",
+	"version": "Alpha-1",
+	"name": "CanabaCraft",
+	"description": "A fabric mod port for CanabaCraft: INDEV",
+	"authors": [
+		"RoryRPM"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Rory-Miley/fabric-canabacraft-template-1.21.1"
+	},
+	"license": "MIT",
+	"icon": "assets/canabacraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.rpm.canabacraft.CanabaCraft"
+		],
+		"fabric-datagen": [
+			"net.rpm.canabacraft.CanabaCraftDataGenerator"
+		],
+		"client": [
+			"net.rpm.canabacraft.CanabaCraftClient"
+		]
+	},
+	"mixins": [
+		"canabacraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

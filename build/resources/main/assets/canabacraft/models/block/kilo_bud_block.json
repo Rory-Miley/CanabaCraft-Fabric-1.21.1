@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "canabacraft:block/kilo_block_top"
+  }
+}
