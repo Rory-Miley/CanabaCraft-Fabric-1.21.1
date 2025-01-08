@@ -11,7 +11,7 @@ import net.rpm.canabacraft.block.ModBlocks;
 import net.rpm.canabacraft.item.ModItems;
 
 public class ModItemGroups {
-
+    // Add mod items and blocks to the creative tab
     public static final ItemGroup BUD_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(CanabaCraft.MOD_ID, "bud_items"),
             FabricItemGroup.builder()
@@ -19,8 +19,10 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.canabacraft.bud_items")) // choose icon
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.BUD);
+                        entries.add(ModItems.GROUND_BUD);
                         entries.add(ModItems.SKIN);
                         entries.add(ModItems.JOINT);
+                        entries.add(ModItems.GRINDER);
                         entries.add(ModBlocks.KILO_BUD_BLOCK);
                         entries.add(ModItems.HEMP_SEEDS);
                     }).build());

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "canabacraft:grinder" },
+    { "item": "canabacraft:bud" }
+  ],
+  "result": {
+    "id": "canabacraft:ground_bud",
+    "count": 1
+  }
+}

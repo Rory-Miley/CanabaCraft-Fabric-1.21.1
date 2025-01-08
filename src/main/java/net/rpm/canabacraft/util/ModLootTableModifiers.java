@@ -11,7 +11,7 @@ import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.rpm.canabacraft.item.ModItems;
 
 public class ModLootTableModifiers {
-
+    //Adds hemp seeds to drops from long and short grass
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
 

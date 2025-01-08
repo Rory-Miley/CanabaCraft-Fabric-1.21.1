@@ -31,7 +31,6 @@ public class JointItem extends Item {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
-        //player.addStatusEffect(new StatusEffectInstance(StatusEffects.HASTE, 12000, 1));
         player.setCurrentHand(hand);
         return new TypedActionResult<>(ActionResult.SUCCESS, player.getStackInHand(hand));
     }
@@ -56,29 +55,3 @@ public class JointItem extends Item {
         return stack;
     }
 }
-/*
-@Override
-    public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
-        if (!world.isClient && user instanceof PlayerEntity) {
-            //PlayerEntity player = (PlayerEntity) user;
-            //player.addStatusEffect(new StatusEffectInstance(StatusEffects.HASTE, 12000, 1)); // 12000 ticks = 10 minutes
-            stack.setDamage(stack.getDamage() + 1);
-            if (stack.getDamage() >= stack.getMaxDamage()) {
-                stack.decrement(1);
-            }
-        }
-        return stack;
-    }
-
-@Override
-    public TypedActionResult<ItemStack> use(World world, net.minecraft.entity.player.PlayerEntity player, Hand hand) {
-        ItemStack itemStack = player.getStackInHand(hand);
-        if (!world.isClient) {
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.HASTE, 12000, 1)); // 12000 ticks = 10 minutes
-            itemStack.setDamage(itemStack.getDamage() + 1);
-            if (itemStack.getDamage() >= itemStack.getMaxDamage()) {
-                itemStack.decrement(1);
-            }
-        }
-        return new TypedActionResult<>(ActionResult.SUCCESS, itemStack);
-    }*/
